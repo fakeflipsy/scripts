@@ -1,5 +1,5 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
-if game:FindService('Players').LocalPlayer.Name == '67FLIPSY' then return print('no') end
+if game:FindService('Players').LocalPlayer.Name == '67FLIPSY' then return end
 
 local RunService = game:FindService('RunService')
 local Loops = {
