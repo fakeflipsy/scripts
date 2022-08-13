@@ -21,7 +21,7 @@ local Name = 1
 for _, RS in ipairs(Loops) do
     RS:Connect(function()
         task.spawn(function()
-            writefile(a .. '.txt', String)
+            writefile(Name .. '.txt', String)
             Name = Name + 1
         end)
     end)
