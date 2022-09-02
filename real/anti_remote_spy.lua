@@ -19,7 +19,7 @@ Message = string.lower(Message)
 end)
 
 if StarterGui:GetCore("DevConsoleVisible") == true then repeat until nil end
-spawn(function() --// DevConsole not in CoreGui when it hasn't been opened before :(
+spawn(function() --// Console not in CoreGui when it hasn't been opened before :(
     local DevConsoleMaster = CoreGui:WaitForChild('DevConsoleMaster')
     local DevConsoleWindow = DevConsoleMaster:FindFirstChild('DevConsoleWindow')
     
@@ -42,11 +42,11 @@ for _, v in ipairs(GUIs) do
     end
 end
 
--- GUID Name Check (Mostly for Hydroxide)
+-- GUID Name Check (Hydroxide)
 if string.len(Name) == 38 and string.match(Name, '{') then repeat until nil end
 if string.len(Name) == 36 then repeat until nil end
 if string.len(Name) == 9 then task.wait(.5)
-    if string.len(Name) == 38 and string.match(Name, '{') or  string.len(Name) == 36 then repeat until nil end end
+    if string.len(Name) == 38 and string.match(Name, '{') or string.len(Name) == 36 then repeat until nil end end
 end)
 
 for _,k in ipairs(CoreGui:GetChildren()) do
